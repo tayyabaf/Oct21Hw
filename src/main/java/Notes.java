@@ -1,19 +1,54 @@
+class Pair<T> {
+    private T first;
+    private T second;
+
+    public Pair(T first, T second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    @Override
+    public String toString() {
+        return "Pair{" +
+                "first=" + first +
+                ", second=" + second +
+                '}';
+    }
+}
+
+class Student{
+    private int age;
+    private double percentile;
+    private char gender;
+    private String name;
+
+    public Student(int age, double percentile, char gender, String name) {
+        this.age = age;
+        this.percentile = percentile;
+        this.gender = gender;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "age=" + age +
+                ", percentile=" + percentile +
+                ", gender=" + gender +
+                ", name='" + name + '\'' +
+                '}';
+    }
+}
 public class Notes {
     public static void main(String[] args) {
-        //Generics allow us to create classes that work with different data types
+        Pair<String> stringPair = new Pair<>("Tayyaba", "Farooq");
+        Pair <Double> doublePair = new Pair<>(23.5, 98.3);
+        System.out.println(stringPair);
+        System.out.println(doublePair);
 
-        //The idea is to allow type (Integer, String, etc, and user-defined types) to
-        // be a parameter to methods, classes, and interfaces.
 
-        //Object is the super class of all other classes, so using Object as a reference can refer to any object
-            //This lacks type-safety
-            //Generics allow us to have type-safety
-
-        //There are 2 main types of Java Generics, which are Generic Methods and Generic Classes
-        //Generic methods have type paramterers which are cited by actual type allowing the generic method to be used in a more geenral way
-        //Generic class has a type paramter section. There can be multiple types which are separated by a comma
-
-        //In Parameter type we can not use primitives like ‘int’,’char’ or ‘double’
+        Pair<Student> students = new Pair<>(new Student(17, 65.5, 'F', "Susan"), new Student(19, 99.9, 'F', "Daphne"));
+        System.out.println(students);
 
 
 

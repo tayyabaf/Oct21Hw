@@ -1,5 +1,8 @@
 # Generics
+>Generics allow the author of a class or method to introduce type parameters, which are symbols that can be substituted for any concrete type
 >Generics allow us to create classes that work with different data types
+
+>With generics, you can create type-safe collections where more problems are caught at compile-time instead of runtime
 
 >The idea is to allow type (Integer, String, etc, and user-defined types) to  be a parameter to methods, classes, and interfaces.
 
@@ -8,9 +11,19 @@
 > 
 >>Generics allow us to have type-safety
 
->There are 2 main types of Java Generics, which are Generic Methods and Generic Classes
->>Generic methods have type paramterers which are cited by actual type allowing the generic method to be used in a more general way
->
->>Generic class has a type paramter section. There can be multiple types which are separated by a comma
-
 >In Parameter type we can not use primitives like int, char, or double
+
+>3 main things to know about Generics
+> >1. Creating instances of generified classes
+> >>Example: When u make an arraylist, u have to tell it the type of objects u will allow in the list
+>
+> >2. Declaring and aissigning variables of generic types
+> 
+> >3. Declaring and invoking methods that take generic types
+>
+
+> A generic class means that the *class declaration* includes a type parameter
+> 
+> A generic method means that the method declaration uses a type paramter in its singature
+
+>In generics, "extends" means "extends or implements"
