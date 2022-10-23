@@ -33,10 +33,10 @@
 >Wildcard, which gets represented with a question mark (?) may be used in parameter, field, or local variable...sometimes even return type
 > 
 > Upperbound
-> > <<? extends Animal>>
+> > < ? extends Animal>
 >
 >Lowerbound
-> > <<? super Animal>>
+> >  < ? super Animal>
 >
 >Unbounded
 > >Does not refer to child or parent classes
