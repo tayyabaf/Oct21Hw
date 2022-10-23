@@ -1,4 +1,4 @@
-package genericclasses.extendskeyword;
+package extendskeyword;
 //Number is a built in class!!
 class NumbersPair <T extends Number>{
     private T first;
