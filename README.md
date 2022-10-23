@@ -29,3 +29,5 @@
 
 >In generics, "extends" means "extends or implements"
 > >You can bound type paramters by using the extends keyword
+
+>Wildcard, which gets represented with a question mark (?) may be used in parameter, field, or local variable...sometimes even return type
